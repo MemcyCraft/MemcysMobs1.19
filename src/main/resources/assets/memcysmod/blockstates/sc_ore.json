@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "memcysmod:block/sc_ore" }
+  }
+}

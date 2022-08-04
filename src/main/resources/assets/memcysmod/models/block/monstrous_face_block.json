@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "memcysmod:block/monstrous_face_block"
+  }
+}

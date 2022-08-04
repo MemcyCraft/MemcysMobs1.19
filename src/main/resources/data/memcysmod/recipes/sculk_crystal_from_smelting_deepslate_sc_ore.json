@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 9.0,
+  "ingredient": {
+    "item": "memcysmod:deepslate_sc_ore"
+  },
+  "result": "memcysmod:sculk_crystal"
+}

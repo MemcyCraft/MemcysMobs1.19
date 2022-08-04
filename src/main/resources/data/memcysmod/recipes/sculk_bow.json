@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "memcysmod:sculk_bone"
+    },
+    "X": {
+      "item": "memcysmod:sculk_tendril"
+    }
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "item": "memcysmod:sculk_bow"
+  }
+}

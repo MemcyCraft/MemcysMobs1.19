@@ -1,0 +1,16 @@
+{
+  "item.memcysmod.sculk_kleafer": "Sculk Cleaver",
+  "item.memcysmod.sculk_crystal": "Sculk Crystal",
+  "item.memcysmod.shriekers_scythe": "Shrieker's Scythe",
+  "item.memcysmod.sculk_bow": "Sculk Bow",
+  "item.memcysmod.sculk_tendril": "Sculk Tendril",
+  "item.memcysmod.sculk_bone": "Sculk Bone",
+  "item.memcysmod.pestilent_sword": "Pestilent Sword",
+
+  "block.memcysmod.acd": "Ancient Chisseled Dripstone",
+  "block.memcysmod.deepslate_sc_ore": "Deepslate Sculk Crystal Ore",
+  "block.memcysmod.sc_ore": "Sculk Crystal Ore",
+
+  "item.memcysmod.shriekers_shield": "Shrieker's Shield",
+  "itemGroup.memcystab": "Memcy's Mobs"
+}
