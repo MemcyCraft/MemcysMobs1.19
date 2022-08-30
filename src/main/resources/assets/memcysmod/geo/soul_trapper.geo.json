@@ -1,0 +1,94 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.soul_trapper",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "soul_trapper",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Leftleg",
+					"parent": "soul_trapper",
+					"pivot": [3, 11, 0],
+					"cubes": [
+						{"origin": [2.1, 0, -2.4], "size": [7, 13, 6], "uv": [0, 68]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "soul_trapper",
+					"pivot": [-6, 10, 0],
+					"cubes": [
+						{"origin": [-9.1, 0, -2.4], "size": [7, 13, 6], "uv": [58, 0]}
+					]
+				},
+				{
+					"name": "pelvis",
+					"parent": "soul_trapper",
+					"pivot": [0, 14.5, 0.5],
+					"rotation": [25, 0, 0],
+					"cubes": [
+						{"origin": [-9, 13, -5], "size": [18, 21, 11], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Rightribcage",
+					"parent": "pelvis",
+					"pivot": [-6, 23, 2],
+					"cubes": [
+						{"origin": [-9, 13, -5.1], "size": [9, 21, 0], "uv": [26, 68]}
+					]
+				},
+				{
+					"name": "Ribcageleft",
+					"parent": "pelvis",
+					"pivot": [7, 22, 0],
+					"cubes": [
+						{"origin": [0, 13, -5.1], "size": [9, 21, 0], "uv": [84, 0]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "pelvis",
+					"pivot": [0, 34, 1.3],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-1, 56, 3.3], "size": [6, 9, 0], "uv": [76, 21]},
+						{"origin": [-2, 56, 0.3], "size": [5, 7, 0], "uv": [0, 0]},
+						{"origin": [-6, 56, 0.3], "size": [4, 5, 0], "uv": [0, 32]},
+						{"origin": [-21, 44.81191, -0.56974], "size": [13, 15, 0], "uv": [76, 60]},
+						{"origin": [8, 44.94243, 0.42171], "size": [13, 15, 0], "uv": [76, 75]},
+						{"origin": [-8, 30, -4.7], "size": [16, 26, 10], "pivot": [0, 34, 1.3], "rotation": [-12.5, 0, 0], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "fullleftarm",
+					"parent": "pelvis",
+					"pivot": [12, 33, 0],
+					"rotation": [-40, 0, 0],
+					"cubes": [
+						{"origin": [9, 6, -4], "size": [8, 28, 8], "uv": [44, 60]}
+					]
+				},
+				{
+					"name": "fullrightarm",
+					"parent": "pelvis",
+					"pivot": [-11, 32, 0],
+					"rotation": [-40, 0, 0],
+					"cubes": [
+						{"origin": [-17, 6, -4], "size": [8, 28, 8], "uv": [52, 24]}
+					]
+				}
+			]
+		}
+	]
+}

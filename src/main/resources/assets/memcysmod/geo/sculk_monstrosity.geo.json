@@ -1,0 +1,224 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sculk_monstrosity",
+				"texture_width": 326,
+				"texture_height": 326,
+				"visible_bounds_width": 12,
+				"visible_bounds_height": 11.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "redstone_monstrosity",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "pelvis",
+					"parent": "redstone_monstrosity",
+					"pivot": [0, 25, 0],
+					"rotation": [42.5, 0, 0],
+					"cubes": [
+						{"origin": [-14, 25, -10.5], "size": [28, 11, 21], "uv": [208, 139]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "pelvis",
+					"pivot": [-1, 28, 0],
+					"cubes": [
+						{"origin": [-37, 36, -15], "size": [74, 57, 30], "uv": [0, 0]},
+						{"origin": [-14, 71, 15], "size": [28, 16, 11], "uv": [202, 110]},
+						{"origin": [7, 93, 8], "size": [6, 8, 0], "uv": [272, 280], "mirror": true},
+						{"origin": [-31, 93, -11], "size": [6, 8, 0], "uv": [272, 280], "mirror": true},
+						{"origin": [1, 93, -11], "size": [6, 8, 0], "uv": [272, 280], "mirror": true},
+						{"origin": [27, 93, 5], "size": [7, 8, 0], "uv": [271, 290]},
+						{"origin": [-30, 93, 10], "size": [7, 8, 0], "uv": [271, 290]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 68, -15],
+					"rotation": [10, 0, 0],
+					"cubes": [
+						{"origin": [-14, 58, -36], "size": [28, 31, 21], "inflate": 0.01, "uv": [0, 188]},
+						{"origin": [-34, 70, -31], "size": [20, 13, 13], "uv": [259, 219]},
+						{"origin": [14, 70, -31], "size": [20, 13, 13], "uv": [248, 48]},
+						{"origin": [-34, 83, -31], "size": [9, 15, 13], "uv": [120, 261]},
+						{"origin": [25, 83, -31], "size": [9, 15, 13], "uv": [164, 263]},
+						{"origin": [-13.5, 65, -36], "size": [27, 0, 21], "uv": [80, 87]}
+					]
+				},
+				{
+					"name": "mouth",
+					"parent": "head",
+					"pivot": [0, 55, -14.5],
+					"rotation": [17.5, 0, 0],
+					"cubes": [
+						{"origin": [-13.5, 55, -36], "size": [27, 10, 21], "uv": [184, 232]},
+						{"origin": [-13.5, 57, -36], "size": [27, 0, 21], "uv": [80, 87]}
+					]
+				},
+				{
+					"name": "sculksensor1",
+					"parent": "head",
+					"pivot": [14, 86, -36],
+					"rotation": [0, 30, 0],
+					"cubes": [
+						{"origin": [14, 84, -36], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "sculksensor2",
+					"parent": "head",
+					"pivot": [9, 75, -36],
+					"rotation": [0, 65, 0],
+					"cubes": [
+						{"origin": [9, 73, -36], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "sculksensor3",
+					"parent": "head",
+					"pivot": [14, 70, -33],
+					"rotation": [0, 32.5, 0],
+					"cubes": [
+						{"origin": [14, 69, -33], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "sculksensor4",
+					"parent": "head",
+					"pivot": [-4, 70, -36],
+					"rotation": [0, 130, 0],
+					"cubes": [
+						{"origin": [-4, 68, -36], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "body",
+					"pivot": [-46.5, 72, 0],
+					"rotation": [-55, 0, 0],
+					"cubes": [
+						{"origin": [-74, 61, -13.5], "size": [37, 23, 27], "uv": [101, 110]},
+						{"origin": [-50, 84, 5], "size": [7, 8, 0], "uv": [271, 290]}
+					]
+				},
+				{
+					"name": "right_armture",
+					"parent": "right_arm",
+					"pivot": [-55.5, 63, 0],
+					"cubes": [
+						{"origin": [-67, 44, -8], "size": [22, 22, 16], "uv": [243, 171]},
+						{"origin": [-67, 22, -8], "size": [22, 22, 16], "uv": [116, 160]},
+						{"origin": [-67, 28, -8], "size": [22, 0, 16], "uv": [184, 178]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "body",
+					"pivot": [45.5, 72, 0],
+					"rotation": [-55, 0, 0],
+					"cubes": [
+						{"origin": [37, 61, -13.5], "size": [37, 23, 27], "uv": [0, 87]},
+						{"origin": [37, 84, -13.5], "size": [20, 23, 27], "uv": [181, 60]}
+					]
+				},
+				{
+					"name": "sculksensor5",
+					"parent": "left_arm",
+					"pivot": [57, 92, -3],
+					"rotation": [0, 30, 0],
+					"cubes": [
+						{"origin": [57, 90, -3], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "left_armture",
+					"parent": "left_arm",
+					"pivot": [55.5, 63, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [44, 44, -8], "size": [22, 22, 16], "uv": [0, 240], "mirror": false}
+					]
+				},
+				{
+					"name": "left_hand",
+					"parent": "left_armture",
+					"pivot": [55.5, 44, 0],
+					"cubes": [
+						{"origin": [40.5, 23.5, -14.5], "size": [29, 20, 29], "inflate": 0.5, "uv": [0, 137]}
+					]
+				},
+				{
+					"name": "left_finger1",
+					"parent": "left_hand",
+					"pivot": [63.5, 23, -6],
+					"mirror": true,
+					"cubes": [
+						{"origin": [61.5, 13, -8.5], "size": [3, 10, 5], "uv": [0, 87], "mirror": false}
+					]
+				},
+				{
+					"name": "left_finger2",
+					"parent": "left_hand",
+					"pivot": [63.5, 23, 6],
+					"mirror": true,
+					"cubes": [
+						{"origin": [61.5, 13, 3.5], "size": [3, 10, 5], "uv": [11, 10], "mirror": false}
+					]
+				},
+				{
+					"name": "left_finger3",
+					"parent": "left_hand",
+					"pivot": [47.5, 23, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [45.5, 13, -2.5], "size": [3, 10, 5], "uv": [0, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "sculksensor6",
+					"parent": "body",
+					"pivot": [-19, 86, 15],
+					"rotation": [0, -117.5, 0],
+					"cubes": [
+						{"origin": [-19, 84, 15], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "sculksensor7",
+					"parent": "body",
+					"pivot": [29, 74, 15],
+					"rotation": [0, -62.5, 0],
+					"cubes": [
+						{"origin": [29, 72, 15], "size": [10, 10, 0], "uv": [268, 255]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "redstone_monstrosity",
+					"pivot": [-21, 29, 0],
+					"rotation": [0, 0, 0],
+					"cubes": [
+						{"origin": [-33, 0, -9.5], "size": [24, 29, 19], "uv": [98, 213]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "redstone_monstrosity",
+					"pivot": [21, 29, 0],
+					"rotation": [10, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [9, 0, -9.5], "size": [24, 29, 19], "uv": [208, 0], "mirror": false}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,6 +1,7 @@
 package net.memcycraft.memcysmod.item;
 import net.memcycraft.memcysmod.MemcysMod;
 import net.memcycraft.memcysmod.entity.EntityInit;
+import net.memcycraft.memcysmod.item.custom.RAItem;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShieldItem;
@@ -39,14 +40,28 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
 
     public static final RegistryObject<Item> PESTILENT_SWORD = ITEMS.register("pestilent_sword",
-            () -> new SwordItem(ModTiers.SCULK_CRYSTAL, 6, 9f,
+            () -> new SwordItem(ModTiers.SCULK_CRYSTAL, 20, 50f,
+                    new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
+
+    public static final RegistryObject<Item> RA = ITEMS.register("ra",
+            () -> new RAItem(ModTiers.SCULK_CRYSTAL, 20, 50f,
                     new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
 
     public static final RegistryObject<Item> SCULK_GOLEM_SPAWN_EGG = ITEMS.register("sculk_golem_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityInit.SCULK_GOLEM,0x948e8d, 0x3b3635,
+            () -> new ForgeSpawnEggItem(EntityInit.SCULK_GOLEM,0x009295, 0x3b3635,
                     new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
 
+    public static final RegistryObject<Item> SCULK_MONSTROSITY_SPAWN_EGG = ITEMS.register("sculk_monstrosity_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.SCULK_MONSTROSITY,0x373737, 0x29dfeb,
+                    new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
 
+    public static final RegistryObject<Item> SOUL_SPAWN_EGG = ITEMS.register("soul_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.SOUL_TRAPPER,0xbbc39b, 0xd1d6b6,
+                    new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
+    public static final RegistryObject<Item> S_SPAWN_EGG = ITEMS.register("s_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.SOUL_TRAPPER,0xbbc39b, 0xd1d6b6,
+                    new Item.Properties().tab(ModCreativeModeTab.MEMCYS_TAB)));
+// MEMCYS FUCKING SHIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

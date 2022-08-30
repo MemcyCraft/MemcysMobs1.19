@@ -271,6 +271,62 @@
 					}
 				}
 			}
+		},
+		"animation.sculk_golem.sleep": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"Fullbody": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Head2": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone2": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Fullrightarm": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"fullleftarm": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Leftleg": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone5": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

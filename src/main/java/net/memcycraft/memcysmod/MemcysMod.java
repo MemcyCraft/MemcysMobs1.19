@@ -3,8 +3,14 @@ package net.memcycraft.memcysmod;
 import com.mojang.logging.LogUtils;
 import net.memcycraft.memcysmod.block.ModBlocks;
 import net.memcycraft.memcysmod.entity.EntityInit;
+import net.memcycraft.memcysmod.entity.sculk_cube.SculkCubeEntity;
+import net.memcycraft.memcysmod.entity.sculk_cube.SculkCubeRenderer;
 import net.memcycraft.memcysmod.entity.sculk_golem.SculkGolem;
 import net.memcycraft.memcysmod.entity.sculk_golem.SculkGolemRenderer;
+import net.memcycraft.memcysmod.entity.sculk_monstrosity.Sculk_Monstrosity;
+import net.memcycraft.memcysmod.entity.sculk_monstrosity.Sculk_MonstrosityRenderer;
+import net.memcycraft.memcysmod.entity.soul_trapper.Soul_Trapper;
+import net.memcycraft.memcysmod.entity.soul_trapper.Soul_TrapperRenderer;
 import net.memcycraft.memcysmod.item.ModItems;
 import net.memcycraft.memcysmod.util.ModItemProperties;
 import net.minecraft.client.Minecraft;
@@ -74,10 +80,16 @@ public class MemcysMod {
 
     private void clientSetup(FMLClientSetupEvent event){
         EntityRenderers.register(EntityInit.SCULK_GOLEM.get(), SculkGolemRenderer::new);
+        EntityRenderers.register(EntityInit.SCULK_MONSTROSITY.get(), Sculk_MonstrosityRenderer::new);
+        EntityRenderers.register(EntityInit.SOUL_TRAPPER.get(), Soul_TrapperRenderer::new);
+        EntityRenderers.register(EntityInit.SCULK_CUBE.get(), SculkCubeRenderer::new);
     }
 
     private void registerEntityAttributes(EntityAttributeCreationEvent event){
         event.put(EntityInit.SCULK_GOLEM.get(), SculkGolem.createAttributes());
+        event.put(EntityInit.SCULK_MONSTROSITY.get(), Sculk_Monstrosity.createAttributes());
+        event.put(EntityInit.SOUL_TRAPPER.get(), Soul_Trapper.createAttributes());
+        event.put(EntityInit.SCULK_CUBE.get(), SculkCubeEntity.createAttributes());
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
